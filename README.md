@@ -6,26 +6,26 @@
 2. [GCP architecture framework](https://cloud.google.com/architecture/framework)
 
 
-## Study cases
+# Study cases
 
-### 1. EHR Healthcare
+## 1. EHR Healthcare
 
-#### Company overview
+### Company overview
 
 Saas, leading provider of electronic health record software to the medical industry.
 
-#### Solution concept
+### Solution concept
 
 1. Scale
 2. Disaster recovery plan
 3. Continuous deployment
 
-#### Focus Area
+### Focus Area
 
 Healthcare industry: heavily regulated for privacy / protection os sensitive personal data (PII = Personal Identifiable Information).
 Software is currently hosted in multiple colocation facilities, the lease on one of the data centers is about to expire (we'll migrate this one first): step by step migration.
 
-#### Existing technical environment
+### Existing technical environment
 
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
@@ -34,7 +34,7 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 | Users are managed via Microsoft Active Directory | [Cloud Identity](https://www.youtube.com/watch?v=Hhqi8xCEI7U)  |
 | Monitoring is currently being done via various open source tools. Alerts are sent via email and are often ignored  | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
 
-#### Business requirements
+### Business requirements
 
 | Business requirement  | GCP service |
 | ------------- | ------------- |
@@ -46,7 +46,7 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 | Maintain regulatory compliance | [DLP (Data Loss Protection)](https://www.youtube.com/watch?v=ab_Dctdu2G8&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
 | Decrease infrastructure administration costs | Serverless services & preemptible VMs|
  
-#### Technical requirements
+### Technical requirements
 
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
@@ -67,21 +67,19 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
 
 
-## Study cases
+## 2. Helicopter Racing League
 
-### 2. Helicopter Racing League
-
-#### Company overview
+### Company overview
 
 Saas, leading provider of electronic health record software to the medical industry.
 
-#### Solution concept
+### Solution concept
 
 1. Scale
 2. Disaster recovery plan
 3. Continuous deployment
 
-#### Focus Area
+### Focus Area
 
 ### Links
 1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
