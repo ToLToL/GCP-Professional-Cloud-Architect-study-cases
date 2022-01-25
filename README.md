@@ -63,6 +63,29 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
 
 2. [Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
-![Screenshot 2022-01-25 at 16 05 57](https://user-images.githubusercontent.com/39993930/151002335-1e84de78-ac06-462b-9c98-32e2a5795974.png)
+
+3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
+
+
+## Study cases
+
+### 2. Helicopter Racing League
+
+#### Company overview
+
+Saas, leading provider of electronic health record software to the medical industry.
+
+#### Solution concept
+
+1. Scale
+2. Disaster recovery plan
+3. Continuous deployment
+
+#### Focus Area
+
+### Links
+1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
+
+2. [Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
 
 3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
