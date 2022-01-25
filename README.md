@@ -23,10 +23,19 @@ Saas, leading provider of electronic health record software to the medical indus
 #### Focus Area
 
 Healthcare industry: heavily regulated for privacy / protection os sensitive personal data (PII = Personal Identifiable Information).
+Software is currently hosted in multiple colocation facilities, the lease on one of the data centers is about to expire (we'll migrate this one first): step by step migration.
+
+#### Existing technical environment
+
+| Existing technical environment  | Application Tier | GCP service |
+| ------------- | ------------- | ------------- |
+| Customer-facing applications are web-based, and many have recently been containerized to run on a group of Kubernetes clusters  | Web | [GKE](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Data is stored in a mixture of relational and NoSQL databases (MySQL, MS SQL Server, Redis, and MongoDB) | Data | MySQL / MS SQL Server: [Cloud SQL](https://www.youtube.com/watch?v=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Cloud Spanner](https://youtu.be/hRDpbHtNceU) Redis: [MemoryStore](https://www.youtube.com/playlist?list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd), MongoDB: Mongo Atlas on Marketplace |
+
 
 #### Business requirements
 
-| BR  | GCP service |
+| Business requirement  | GCP service |
 | ------------- | ------------- |
 | Provide a minimum 99.9% availability for all customer-facing systems  | [HTTP(S) load balancer](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
 | Reduce latency to all customers  | [Cloud CDN](https://www.youtube.com/watch?v=EumuFAfTWJY&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
@@ -38,7 +47,7 @@ Healthcare industry: heavily regulated for privacy / protection os sensitive per
  
 #### Technical requirements
 
-| TR  | GCP service |
+| Technical requirement  | GCP service |
 | ------------- | ------------- |
 | Maintain legacy interfaces to insurance providers with connectivity to both on-premises systems and cloud providers  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
 | Provide a consistent way to manage customer-facing applications that are container-based, not enough time to lift and shift all apps on GCP --> kubernetes on prem and GCP: hybrid  | [Anthos](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
