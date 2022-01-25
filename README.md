@@ -1,5 +1,9 @@
 # GCP-Professional-Cloud-Architect
 
+## Resources
+
+1. [PCA exam questions analysis](https://www.youtube.com/watch?v=iNJe_NrbijM&list=PLQMsfKRZZviTIxEh0pkWNwnDUasGVZS4n&index=2)
+2. 
 ## Study cases
 
 ### 1. EHR Healthcare
