@@ -10,6 +10,13 @@
 
 ## 1. EHR Healthcare
 
+### Links
+1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
+
+2. [Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
+
+3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
+
 ### Company overview
 
 Saas, leading provider of electronic health record software to the medical industry.
@@ -24,6 +31,8 @@ Saas, leading provider of electronic health record software to the medical indus
 
 Healthcare industry: heavily regulated for privacy / protection os sensitive personal data (PII = Personal Identifiable Information).
 Software is currently hosted in multiple colocation facilities, the lease on one of the data centers is about to expire (we'll migrate this one first): step by step migration.
+
+![Screenshot 2022-01-25 at 18 13 10](https://user-images.githubusercontent.com/39993930/151025508-fa94f9d5-e0eb-420b-8d7c-9c6e636fe994.png)
 
 ### Existing technical environment
 
@@ -59,15 +68,15 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 | Create interfaces to ingest and process data from new providers  | [Pub / Sub](https://www.youtube.com/watch?v=JrKEErlWvzA&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Dataflow](https://www.youtube.com/watch?v=WRspZRG9e90&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Cloud Storage](https://www.youtube.com/watch?v=BeYr34swAVE&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
 
 
+## 2. Helicopter Racing League
+
 ### Links
-1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
+1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
 
 2. [Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
 
 3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
 
-
-## 2. Helicopter Racing League
 
 ### Company overview
 
@@ -80,10 +89,3 @@ Saas, leading provider of electronic health record software to the medical indus
 3. Continuous deployment
 
 ### Focus Area
-
-### Links
-1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
-
-2. [Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
-
-3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
