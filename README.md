@@ -3,7 +3,9 @@
 ## Resources
 
 1. [PCA exam questions analysis](https://www.youtube.com/watch?v=iNJe_NrbijM&list=PLQMsfKRZZviTIxEh0pkWNwnDUasGVZS4n&index=2)
-2. 
+2. [GCP architecture framework](https://cloud.google.com/architecture/framework)
+
+
 ## Study cases
 
 ### 1. EHR Healthcare
