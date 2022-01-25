@@ -10,8 +10,6 @@
 
 ### 1. EHR Healthcare
 
-[PDF](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
-
 #### Company overview
 
 Saas, leading provider of electronic health record software to the medical industry.
@@ -40,12 +38,25 @@ Healthcare industry: heavily regulated for privacy / protection os sensitive per
  
 #### Technical requirements
 
-| BR  | GCP service |
+| TR  | GCP service |
 | ------------- | ------------- |
-| Provide a minimum 99.9% availability for all customer-facing systems  | [HTTP(S) load balancer](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Maintain legacy interfaces to insurance providers with connectivity to both on-premises systems and cloud providers  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
+| Provide a consistent way to manage customer-facing applications that are container-based, not enough time to lift and shift all apps on GCP --> kubernetes on prem and GCP: hybrid  | [Anthos](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Provide a secure and high-performance connection between on-premises systems and Google Cloud  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
+| Maintain legacy interfaces to insurance providers with connectivity to both on-premises
+systems and cloud providers  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
+| Maintain legacy interfaces to insurance providers with connectivity to both on-premises
+systems and cloud providers  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
+| Maintain legacy interfaces to insurance providers with connectivity to both on-premises
+systems and cloud providers  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
+| Maintain legacy interfaces to insurance providers with connectivity to both on-premises
+systems and cloud providers  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
 
-[Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
+
+### Links
+1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_ehr_healthcare.pdf)
+
+2. [Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
 ![Screenshot 2022-01-25 at 16 05 57](https://user-images.githubusercontent.com/39993930/151002335-1e84de78-ac06-462b-9c98-32e2a5795974.png)
 
-[Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
-
+3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
