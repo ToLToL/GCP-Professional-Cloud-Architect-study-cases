@@ -64,7 +64,7 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 | Provide a secure and high-performance connection between on-premises systems and Google Cloud  | [Dedicated interconnect](https://www.youtube.com/watch?v=cKaryf7qp9w&t=9s) > 10 GB/s otherwise partner interconnect |
 | Provide consistent logging, log retention, monitoring, and alerting capabilities  | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
 | Maintain and manage multiple container-based environments | [Artifact registry](https://www.youtube.com/watch?v=712Y0KpeHok) |
-| Dynamically scale and provision new environments  | fully-managed CI / CD platform: [Cloud Build](https://www.youtube.com/watch?v=Bvo6jzC3J_A&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Dynamically scale and provision new environments  | fully-managed CI / CD platform: [Cloud Build](https://www.youtube.com/watch?v=Bvo6jzC3J_A&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd), managed CD to Kubernetes: [Cloud Deploy](https://cloud.google.com/blog/products/devops-sre/google-cloud-deploy-now-ga) |
 | Create interfaces to ingest and process data from new providers  | [Pub / Sub](https://www.youtube.com/watch?v=JrKEErlWvzA&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Dataflow](https://www.youtube.com/watch?v=WRspZRG9e90&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Cloud Storage](https://www.youtube.com/watch?v=BeYr34swAVE&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
 
 
