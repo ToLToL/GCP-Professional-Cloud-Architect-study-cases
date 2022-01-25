@@ -27,11 +27,12 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 
 #### Existing technical environment
 
-| Existing technical environment  | Application Tier | GCP service |
-| ------------- | ------------- | ------------- |
-| Customer-facing applications are web-based, and many have recently been containerized to run on a group of Kubernetes clusters  | Web | [GKE](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Data is stored in a mixture of relational and NoSQL databases (MySQL, MS SQL Server, Redis, and MongoDB) | Data | MySQL / MS SQL Server: [Cloud SQL](https://www.youtube.com/watch?v=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Cloud Spanner](https://youtu.be/hRDpbHtNceU) Redis: [MemoryStore](https://www.youtube.com/playlist?list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd), MongoDB: Mongo Atlas on Marketplace |
-
+| Existing technical environment  | GCP service |
+| ------------- | ------------- |
+| Customer-facing applications are web-based, and many have recently been containerized to run on a group of Kubernetes clusters  | [GKE](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Data is stored in a mixture of relational and NoSQL databases (MySQL, MS SQL Server, Redis, and MongoDB) | MySQL / MS SQL Server: [Cloud SQL](https://www.youtube.com/watch?v=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Cloud Spanner](https://youtu.be/hRDpbHtNceU) Redis: [MemoryStore](https://www.youtube.com/playlist?list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd), MongoDB: Mongo Atlas on Marketplace |
+| Users are managed via Microsoft Active Directory | [Cloud Identity](https://www.youtube.com/watch?v=Hhqi8xCEI7U)  |
+| Monitoring is currently being done via various open source tools. Alerts are sent via email and are often ignored  | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
 
 #### Business requirements
 
