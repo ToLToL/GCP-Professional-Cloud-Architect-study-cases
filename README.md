@@ -142,3 +142,49 @@ Crowd sentiment | NoSQL: Datastore |
 | Increase transcoding performance | [Transcoder API](https://cloud.google.com/transcoder/docs)|
 | Create real-time analytics of viewer consumption patterns and engagement | [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & Notebook: [DataLab](https://www.youtube.com/watch?v=Eu57QKNHaiY) & [Data Studio](https://www.youtube.com/watch?v=cd555DBrehg)|
 | Create a data mart to enable processing of large volumes of race data | BigQuery |
+
+
+
+## 3. Mountkirk Games
+
+### Links
+1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_mountkirk_games.pdf)
+
+2. [Youtube analysis video](https://www.youtube.com/watch?v=1w1olPjlPZY)
+
+
+### Company overview
+
+Online, session-based, multiplaye games for mobile. It started expanding to other platform after migrating their on-premises environment to GCP.
+They want to create a FPS game that allows:
+
+- 100s simultaneous players to join a digital arena from multiple platforms and locations
+- Real-time digital banner that displays a global leaderboard of top players
+
+### Solution concept
+
+1. Game's backend: GKE to scale rapidly
+2. Route players to the closest regional game arenas: global load balancer
+3. Keep the global leader in sync: New fans in emerging regions -> multi-region Spanner cluster
+
+### Focus Area
+
+1. Real-time predictions
+2. Process season-long results
+3. Close to users (emerging regions)
+
+
+![Screenshot 2022-01-26 at 11 16 35](https://user-images.githubusercontent.com/39993930/151145200-10857353-7f7f-4f47-b2ec-d7ae6895be8f.png)
+
+
+### Qwiklabs analysis
+
+![Screenshot 2022-01-26 at 10 34 18](https://user-images.githubusercontent.com/39993930/151138577-9ab4ce0b-1439-4605-9f53-f90d5a1ebf67.png)
+
+### Existing technical environment
+
+| Existing technical environment  | GCP service |
+| ------------- | ------------- |
+| Existing content is stored in an object storage service on their existing public cloud provider | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Video encoding and transcoding is performed on VMs created for each job | [Dataflow](https://www.youtube.com/watchv=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
+| Race predictions are performed using TensorFlow running on VMs in the current public cloud provider| [AI platform](https://www.youtube.com/watch?v=Hhqi8xCEI7U)  |
