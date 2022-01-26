@@ -169,10 +169,9 @@ They want to create a FPS game that allows:
 
 ### Focus Area
 
-1. Real-time predictions
-2. Process season-long results
-3. Close to users (emerging regions)
-
+1. Cloud-native design principales
+2. Top priority: latency and then cost management
+3. Advanced analytics capabilities --> iterate deployment of bug fixes and new functionality (CI / CD)
 
 
 ### Qwiklabs analysis
