@@ -80,12 +80,29 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 
 ### Company overview
 
-Saas, leading provider of electronic health record software to the medical industry.
+Global sports league for competitive helicopter racing. Each year:
+
+- world championship
+- several regional league competitions to earn a spot in the world championship
+
+HRL offers paid service to:
+
+- stream the races all over the world
+- live telemetry
+- predictions throughout each race
 
 ### Solution concept
 
-1. Scale
-2. Disaster recovery plan
-3. Continuous deployment
+1. Expand use of AI / ML to facilitate race predictions
+2. CDN: New fans in emerging regions -> serve content (real-time and recorded) close to their users
 
 ### Focus Area
+
+### Existing technical environment
+
+| Existing technical environment  | GCP service |
+| ------------- | ------------- |
+| Customer-facing applications are web-based, and many have recently been containerized to run on a group of Kubernetes clusters  | [GKE](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Data is stored in a mixture of relational and NoSQL databases (MySQL, MS SQL Server, Redis, and MongoDB) | MySQL / MS SQL Server: [Cloud SQL](https://www.youtube.com/watch?v=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Cloud Spanner](https://youtu.be/hRDpbHtNceU) Redis: [MemoryStore](https://www.youtube.com/playlist?list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd), MongoDB: Mongo Atlas on Marketplace |
+| Users are managed via Microsoft Active Directory | [Cloud Identity](https://www.youtube.com/watch?v=Hhqi8xCEI7U)  |
+| Monitoring is currently being done via various open source tools. Alerts are sent via email and are often ignored  | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
