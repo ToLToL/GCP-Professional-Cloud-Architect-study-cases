@@ -102,7 +102,30 @@ HRL offers paid service to:
 
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
-| Customer-facing applications are web-based, and many have recently been containerized to run on a group of Kubernetes clusters  | [GKE](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Data is stored in a mixture of relational and NoSQL databases (MySQL, MS SQL Server, Redis, and MongoDB) | MySQL / MS SQL Server: [Cloud SQL](https://www.youtube.com/watch?v=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) / [Cloud Spanner](https://youtu.be/hRDpbHtNceU) Redis: [MemoryStore](https://www.youtube.com/playlist?list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd), MongoDB: Mongo Atlas on Marketplace |
-| Users are managed via Microsoft Active Directory | [Cloud Identity](https://www.youtube.com/watch?v=Hhqi8xCEI7U)  |
-| Monitoring is currently being done via various open source tools. Alerts are sent via email and are often ignored  | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
+| Existing content is stored in an object storage service on their existing public cloud provider | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Video encoding and transcoding is performed on VMs created for each job | [Dataflow](https://www.youtube.com/watchv=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
+| Race predictions are performed using TensorFlow running on VMs in the current public cloud provider| [AI platform](https://www.youtube.com/watch?v=Hhqi8xCEI7U)  |
+
+### Business requirements
+
+| Business requirement  | GCP service |
+| ------------- | ------------- |
+| Support ability to expose the predictive models to partners  | [HTTP(S) load balancer](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase predictive capabilities during and before races: Race results, Mechanical failures, Crowd sentiment | [Cloud CDN](https://www.youtube.com/watch?v=EumuFAfTWJY&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase telemetry and create additional insights | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Measure fan engagement with new predictions| [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML |
+| Enhance global availability and quality of the broadcasts | [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML  |
+| Increase the number of concurrent viewers | [DLP (Data Loss Protection)](https://www.youtube.com/watch?v=ab_Dctdu2G8&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Minimize operational complexity | Serverless services & preemptible VMs|
+| Ensure compliance with regulations | Serverless services & preemptible VMs|
+| Create a merchandising revenue stream | Serverless services & preemptible VMs|
+
+### Technical requirements
+
+| Technical requirement  | GCP service |
+| ------------- | ------------- |
+| Maintain or increase prediction throughput and accuracy  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
+| Reduce viewer latency | [Anthos](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase transcoding performance | [Dedicated interconnect](https://www.youtube.com/watch?v=cKaryf7qp9w&t=9s) > 10 GB/s otherwise partner interconnect |
+| Create real-time analytics of viewer consumption patterns and engagement | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
+| Create a data mart to enable processing of large volumes of race data | [Artifact registry](https://www.youtube.com/watch?v=712Y0KpeHok) |
