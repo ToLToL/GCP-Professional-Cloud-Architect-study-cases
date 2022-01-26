@@ -238,9 +238,12 @@ Manufactures heavy equipment for the mining / agricultural industries.
 
 ### Focus Area
 
-1. Cloud-native design principales
-2. Top priority: latency and then cost management
-3. Advanced analytics capabilities --> iterate deployment of bug fixes and new functionality (CI / CD)
+1. Customer service, minimize vehicle downtimes
+2. Online fleet management services, improve operations of their dealerships
+3. 5-year plan: create a partner ecosystem of new products by:
+- enabling access to their data
+- increasing autonomous operation capabilities of their vehicles
+- creating a path to move the remaining legacy systems to the cloud
 
 ### Qwiklabs analysis
 
@@ -249,21 +252,21 @@ Manufactures heavy equipment for the mining / agricultural industries.
 
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
-| data aggregation and analysis infrastructure in GCP / serves clients from all around the world |  |
-| data captured from their 2 main manufacturing plants and sent to private data centers that contain their legacy inventory / logistics mangement systems. | |
-| Private data centers connected to GCP via multiple network interconnects | |
-| Web frontend for dealers / customers in GCP and allows access to stock management & analytics | |
+| data aggregation and analysis infrastructure in GCP / serves clients from all around the world | DataFlow, BigQuery, Global HTTP(S) load balancer |
+| data captured from their 2 main manufacturing plants and sent to private data centers that contain their legacy inventory / logistics mangement systems |  |
+| Private data centers connected to GCP via multiple network interconnects | Interconnect |
+| Web frontend for dealers / customers in GCP and allows access to stock management & analytics | Managed instance group, BigQuery |
 
 
 ### Business requirements
 
 | Business requirement  | GCP service |
 | ------------- | ------------- |
-| Predict and detect vehicle malfunction and rapidly ship parts to dealerships for just-intime repair where possible |  |
-| Decrease cloud operational costs and adapt to seasonality |  |
-| Increase speed and reliability of development workflow |  |
-| Allow remote developers to be productive without compromising code or data security |  |
-| Create a flexible and scalable platform for developers to create custom API services for dealers and partners |  |
+| Predict and detect vehicle malfunction and rapidly ship parts to dealerships for just-intime repair where possible | ML |
+| Decrease cloud operational costs and adapt to seasonality | Autoscaling: managed instance group |
+| Increase speed and reliability of development workflow | CI / CD: Cloud Build |
+| Allow remote developers to be productive without compromising code or data security | Cloud IAM, roles |
+| Create a flexible and scalable platform for developers to create custom API services for dealers and partners | Apigee |
 
 
 
@@ -271,9 +274,9 @@ Manufactures heavy equipment for the mining / agricultural industries.
 
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
-| Create a new abstraction layer for HTTP API access to their legacy systems to enable a gradual move into the cloud without disrupting operations| GKE autoscaling / Spanner (autoscales by default) |
-| Modernize all CI/CD pipelines to allow developers to deploy container-based workloads in highly scalable environments |  |
-| Allow developers to run experiments without compromising security and governance requirements |  |
-| Create a self-service portal for internal and partner developers to create new projects, request resources for data analytics jobs, and centrally manage access to the API endpoints |  |
-| Use cloud-native solutions for keys and secrets management and optimize for identitybased access |  |
-| Improve and standardize tools necessary for application and network monitoring and troubleshooting |  |
+| Create a new abstraction layer for HTTP API access to their legacy systems to enable a gradual move into the cloud without disrupting operations | Apigee |
+| Modernize all CI/CD pipelines to allow developers to deploy container-based workloads in highly scalable environments | Cloud Sources Repositories, Cloud Build, Cloud Deploy, Jenkins |
+| Allow developers to run experiments without compromising security and governance requirements | Sandbox: project for test purposes |
+| Create a self-service portal for internal and partner developers to create new projects, request resources for data analytics jobs, and centrally manage access to the API endpoints | Apigee |
+| Use cloud-native solutions for keys and secrets management and optimize for identity-based access | Vault / Kubernetes secrets, RBAC |
+| Improve and standardize tools necessary for application and network monitoring and troubleshooting | Operations |
