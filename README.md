@@ -100,13 +100,15 @@ HRL offers paid service to:
 2. Process season-long results
 3. Close to users (emerging regions)
 
+
+![Screenshot 2022-01-26 at 11 16 35](https://user-images.githubusercontent.com/39993930/151145200-10857353-7f7f-4f47-b2ec-d7ae6895be8f.png)
+
+
 ### Qwiklabs analysis
 
 ![Screenshot 2022-01-26 at 10 34 18](https://user-images.githubusercontent.com/39993930/151138577-9ab4ce0b-1439-4605-9f53-f90d5a1ebf67.png)
 
 ### Existing technical environment
-
-![Screenshot 2022-01-26 at 10 39 11](https://user-images.githubusercontent.com/39993930/151139306-e9c332ca-15a8-43e1-a24d-3f5cf9d20b75.png)
 
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
