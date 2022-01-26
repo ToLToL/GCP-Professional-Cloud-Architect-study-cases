@@ -234,9 +234,11 @@ Manufactures heavy equipment for the mining / agricultural industries.
 1. Collect telemetry data from sensors on 2 million vehicles.
 2. Small subset of data transmitted from the vehicles in real-time to facilicate fleet mangement
 3. The rest of the sensor data: collected, compressed and uploaded daily
-4. 200 ~ 500 MB of data / vehicle / day
+4. 200 ~ 500 MB of data / vehicle / day --> 400 TB ~ 1 PB / day
 
 ### Focus Area
+
+IoT
 
 1. Customer service, minimize vehicle downtimes
 2. Online fleet management services, improve operations of their dealerships
@@ -246,6 +248,7 @@ Manufactures heavy equipment for the mining / agricultural industries.
 - creating a path to move the remaining legacy systems to the cloud
 
 ### Qwiklabs analysis
+![Screenshot 2022-01-26 at 16 39 50](https://user-images.githubusercontent.com/39993930/151195375-9305ff91-992d-4952-ba3f-7516b2bd6b05.png)
 
 
 ### Existing technical environment
@@ -255,28 +258,27 @@ Manufactures heavy equipment for the mining / agricultural industries.
 | data aggregation and analysis infrastructure in GCP / serves clients from all around the world | DataFlow, BigQuery, Global HTTP(S) load balancer |
 | data captured from their 2 main manufacturing plants and sent to private data centers that contain their legacy inventory / logistics mangement systems |  |
 | Private data centers connected to GCP via multiple network interconnects | Interconnect |
-| Web frontend for dealers / customers in GCP and allows access to stock management & analytics | Managed instance group, BigQuery |
+| Web frontend for dealers / customers in GCP and allows access to stock management & analytics | App Engine, Cloud Run, GKE |
 
 
 ### Business requirements
 
 | Business requirement  | GCP service |
 | ------------- | ------------- |
-| Predict and detect vehicle malfunction and rapidly ship parts to dealerships for just-intime repair where possible | ML |
-| Decrease cloud operational costs and adapt to seasonality | Autoscaling: managed instance group |
+| Predict and detect vehicle malfunction and rapidly ship parts to dealerships for just-intime repair where possible | ML / Tensorflow & BigQuery |
+| Decrease cloud operational costs and adapt to seasonality | managed services: App Engine, GKE, Cloud Run |
 | Increase speed and reliability of development workflow | CI / CD: Cloud Build |
-| Allow remote developers to be productive without compromising code or data security | Cloud IAM, roles |
-| Create a flexible and scalable platform for developers to create custom API services for dealers and partners | Apigee |
-
+| Allow remote developers to be productive without compromising code or data security | Cloud Identity, Cloud IAM |
+| Create a flexible and scalable platform for developers to create custom API services for dealers and partners | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)|
 
 
 ### Technical requirements
 
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
-| Create a new abstraction layer for HTTP API access to their legacy systems to enable a gradual move into the cloud without disrupting operations | Apigee |
-| Modernize all CI/CD pipelines to allow developers to deploy container-based workloads in highly scalable environments | Cloud Sources Repositories, Cloud Build, Cloud Deploy, Jenkins |
+| Create a new abstraction layer for HTTP API access to their legacy systems to enable a gradual move into the cloud without disrupting operations | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4) |
+| Modernize all CI/CD pipelines to allow developers to deploy container-based workloads in highly scalable environments | Cloud Sources Repositories, Cloud Build, Container Registry, Artifact Registry, Jenkins, Cloud Deploy, Cloud Run, GKE |
 | Allow developers to run experiments without compromising security and governance requirements | Sandbox: project for test purposes |
-| Create a self-service portal for internal and partner developers to create new projects, request resources for data analytics jobs, and centrally manage access to the API endpoints | Apigee |
-| Use cloud-native solutions for keys and secrets management and optimize for identity-based access | Vault / Kubernetes secrets, RBAC |
+| Create a self-service portal for internal and partner developers to create new projects, request resources for data analytics jobs, and centrally manage access to the API endpoints | ? |
+| Use cloud-native solutions for keys and secrets management and optimize for identity-based access | [KMS](https://www.youtube.com/watch?v=38_dWxOHUN8) |
 | Improve and standardize tools necessary for application and network monitoring and troubleshooting | Operations |
