@@ -98,6 +98,10 @@ HRL offers paid service to:
 
 ### Focus Area
 
+1. Real-time predictions
+2. Process season-long results
+3. Close to users (emerging regions)
+
 ### Existing technical environment
 
 | Existing technical environment  | GCP service |
@@ -112,20 +116,20 @@ HRL offers paid service to:
 | ------------- | ------------- |
 | Support ability to expose the predictive models to partners  | [HTTP(S) load balancer](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
 | Increase predictive capabilities during and before races: Race results, Mechanical failures, Crowd sentiment | [Cloud CDN](https://www.youtube.com/watch?v=EumuFAfTWJY&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Increase telemetry and create additional insights | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase telemetry and create additional insights | [Operations & BigQuery](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
 | Measure fan engagement with new predictions| [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML |
-| Enhance global availability and quality of the broadcasts | [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML  |
-| Increase the number of concurrent viewers | [DLP (Data Loss Protection)](https://www.youtube.com/watch?v=ab_Dctdu2G8&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Minimize operational complexity | Serverless services & preemptible VMs|
-| Ensure compliance with regulations | Serverless services & preemptible VMs|
-| Create a merchandising revenue stream | Serverless services & preemptible VMs|
+| Enhance global availability and quality of the broadcasts | [CDN and VMs across regions](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML  |
+| Increase the number of concurrent viewers | [load balancer](https://www.youtube.com/watch?v=ab_Dctdu2G8&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Minimize operational complexity | managed services|
+| Ensure compliance with regulations | Operations: audit logs / cloud storage: encryption, KMS|
+| Create a merchandising revenue stream | ? |
 
 ### Technical requirements
 
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
 | Maintain or increase prediction throughput and accuracy  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
-| Reduce viewer latency | [Anthos](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Increase transcoding performance | [Dedicated interconnect](https://www.youtube.com/watch?v=cKaryf7qp9w&t=9s) > 10 GB/s otherwise partner interconnect |
+| Reduce viewer latency | [CDN and VMs across regions](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase transcoding performance | [Dataflow](https://www.youtube.com/watch?v=cKaryf7qp9w&t=9s) > 10 GB/s otherwise partner interconnect |
 | Create real-time analytics of viewer consumption patterns and engagement | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
 | Create a data mart to enable processing of large volumes of race data | [Artifact registry](https://www.youtube.com/watch?v=712Y0KpeHok) |
