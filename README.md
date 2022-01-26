@@ -106,6 +106,8 @@ HRL offers paid service to:
 
 ### Existing technical environment
 
+![Screenshot 2022-01-26 at 10 39 11](https://user-images.githubusercontent.com/39993930/151139306-e9c332ca-15a8-43e1-a24d-3f5cf9d20b75.png)
+
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
 | Existing content is stored in an object storage service on their existing public cloud provider | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
@@ -116,14 +118,14 @@ HRL offers paid service to:
 
 | Business requirement  | GCP service |
 | ------------- | ------------- |
-| Support ability to expose the predictive models to partners  | [HTTP(S) load balancer](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Support ability to expose the predictive models to partners  | [Cloud Endpoint](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & [Cloud API Gateway]()  |
 | Increase predictive capabilities during and before races: Race results, Mechanical failures, Crowd sentiment | [Cloud CDN](https://www.youtube.com/watch?v=EumuFAfTWJY&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Increase telemetry and create additional insights | [Operations & BigQuery](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase telemetry and create additional insights | [BigQuery](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
 | Measure fan engagement with new predictions| [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML |
 | Enhance global availability and quality of the broadcasts | [CDN and VMs across regions](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML  |
-| Increase the number of concurrent viewers | [load balancer](https://www.youtube.com/watch?v=ab_Dctdu2G8&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Minimize operational complexity | managed services|
-| Ensure compliance with regulations | Operations: audit logs / cloud storage: encryption, KMS|
+| Increase the number of concurrent viewers | [Managed instance group](https://www.youtube.com/watch?v=ab_Dctdu2G8&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Minimize operational complexity | Serverless & managed services |
+| Ensure compliance with regulations | Cloud IAM: lest privilege access, Operations: audit logs / cloud storage: encryption, KMS|
 | Create a merchandising revenue stream | ? |
 
 ### Technical requirements
@@ -131,7 +133,7 @@ HRL offers paid service to:
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
 | Maintain or increase prediction throughput and accuracy  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
-| Reduce viewer latency | [CDN and VMs across regions](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Increase transcoding performance | [Dataflow](https://www.youtube.com/watch?v=cKaryf7qp9w&t=9s) > 10 GB/s otherwise partner interconnect |
-| Create real-time analytics of viewer consumption patterns and engagement | [Operations](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
-| Create a data mart to enable processing of large volumes of race data | [Artifact registry](https://www.youtube.com/watch?v=712Y0KpeHok) |
+| Reduce viewer latency | [Multi-regional bucket & Cloud CDN](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase transcoding performance | [Transcoder API](https://www.youtube.com/watch?v=cKaryf7qp9w&t=9s) > 10 GB/s otherwise partner interconnect |
+| Create real-time analytics of viewer consumption patterns and engagement | [BigQuery](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & [DataLab]() & [Data Studio]()|
+| Create a data mart to enable processing of large volumes of race data | [DataMart](https://www.youtube.com/watch?v=712Y0KpeHok) |
