@@ -121,11 +121,14 @@ HRL offers paid service to:
 | Business requirement  | GCP service |
 | ------------- | ------------- |
 | Support ability to expose the predictive models to partners  | [Cloud Endpoint](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & [Cloud API Gateway]()  |
-| Increase predictive capabilities during and before races: Race results, Mechanical failures, Crowd sentiment | [Cloud CDN](https://www.youtube.com/watch?v=EumuFAfTWJY&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Increase telemetry and create additional insights | [BigQuery](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Measure fan engagement with new predictions| [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML |
-| Enhance global availability and quality of the broadcasts | [CDN and VMs across regions](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & ML  |
-| Increase the number of concurrent viewers | [Managed instance group](https://www.youtube.com/watch?v=ab_Dctdu2G8&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Increase predictive capabilities during and before races: | |
+Race results | SQL or NoSQL ? |
+Mechanical failures | sensors, IoT, time series database: BigTable|
+Crowd sentiment | NoSQL: Datastore |
+| Increase telemetry and create additional insights | BigQuery |
+| Measure fan engagement with new predictions| NoSQL: Datastore |
+| Enhance global availability and quality of the broadcasts | CDN and VMs across regions |
+| Increase the number of concurrent viewers | Autoscale: Managed instance group  |
 | Minimize operational complexity | Serverless & managed services |
 | Ensure compliance with regulations | Cloud IAM: lest privilege access, Operations: audit logs / cloud storage: encryption, KMS|
 | Create a merchandising revenue stream | ? |
