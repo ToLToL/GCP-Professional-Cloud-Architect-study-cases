@@ -213,3 +213,67 @@ They want to create a FPS game that allows:
 | Store game activity logs in structured files for future analysis | NoSQL: Datastore |
 | Use GPU processing to render graphics server-side for multi-platform support | GKE with GPUs enhanced VMs |
 | Support eventual migration of legacy games to this new platform | legacy games must be containerized for micro-services architecture because we use GKE |
+
+
+
+## 4. TerramEarth
+
+### Links
+1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_terramearth.pdf)
+
+2. [Youtube analysis video](https://www.youtube.com/watch?v=0G8hx9HUnbk)
+
+
+### Company overview
+
+Manufactures heavy equipment for the mining / agricultural industries.
+500 dealers, service centers in 100 countries. Their mission: build products that make their customers more productive.
+
+### Solution concept
+
+1. Collect telemetry data from sensors on 2 million vehicles.
+2. Small subset of data transmitted from the vehicles in real-time to facilicate fleet mangement
+3. The rest of the sensor data: collected, compressed and uploaded daily
+4. 200 ~ 500 MB of data / vehicle / day
+
+### Focus Area
+
+1. Cloud-native design principales
+2. Top priority: latency and then cost management
+3. Advanced analytics capabilities --> iterate deployment of bug fixes and new functionality (CI / CD)
+
+### Qwiklabs analysis
+
+
+### Existing technical environment
+
+| Existing technical environment  | GCP service |
+| ------------- | ------------- |
+| data aggregation and analysis infrastructure in GCP / serves clients from all around the world |  |
+| data captured from their 2 main manufacturing plants and sent to private data centers that contain their legacy inventory / logistics mangement systems. | |
+| Private data centers connected to GCP via multiple network interconnects | |
+| Web frontend for dealers / customers in GCP and allows access to stock management & analytics | |
+
+
+### Business requirements
+
+| Business requirement  | GCP service |
+| ------------- | ------------- |
+| Predict and detect vehicle malfunction and rapidly ship parts to dealerships for just-intime repair where possible |  |
+| Decrease cloud operational costs and adapt to seasonality |  |
+| Increase speed and reliability of development workflow |  |
+| Allow remote developers to be productive without compromising code or data security |  |
+| Create a flexible and scalable platform for developers to create custom API services for dealers and partners |  |
+
+
+
+### Technical requirements
+
+| Technical requirement  | GCP service |
+| ------------- | ------------- |
+| Create a new abstraction layer for HTTP API access to their legacy systems to enable a gradual move into the cloud without disrupting operations| GKE autoscaling / Spanner (autoscales by default) |
+| Modernize all CI/CD pipelines to allow developers to deploy container-based workloads in highly scalable environments |  |
+| Allow developers to run experiments without compromising security and governance requirements |  |
+| Create a self-service portal for internal and partner developers to create new projects, request resources for data analytics jobs, and centrally manage access to the API endpoints |  |
+| Use cloud-native solutions for keys and secrets management and optimize for identitybased access |  |
+| Improve and standardize tools necessary for application and network monitoring and troubleshooting |  |
