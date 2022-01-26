@@ -174,17 +174,40 @@ They want to create a FPS game that allows:
 3. Close to users (emerging regions)
 
 
-![Screenshot 2022-01-26 at 11 16 35](https://user-images.githubusercontent.com/39993930/151145200-10857353-7f7f-4f47-b2ec-d7ae6895be8f.png)
-
 
 ### Qwiklabs analysis
 
-![Screenshot 2022-01-26 at 10 34 18](https://user-images.githubusercontent.com/39993930/151138577-9ab4ce0b-1439-4605-9f53-f90d5a1ebf67.png)
+
 
 ### Existing technical environment
 
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
-| Existing content is stored in an object storage service on their existing public cloud provider | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Video encoding and transcoding is performed on VMs created for each job | [Dataflow](https://www.youtube.com/watchv=nGwOPAqgX7U&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) |
-| Race predictions are performed using TensorFlow running on VMs in the current public cloud provider| [AI platform](https://www.youtube.com/watch?v=Hhqi8xCEI7U)  |
+| Lift-and-shifted 5 games on GCP | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| 1 project / game, all nested below a folder that maintains most of the permissions / network policies|  |
+| 1 project for legacy games with low traffic | |
+| Separate sev / testing environments | |
+
+
+### Business requirements
+
+| Business requirement  | GCP service |
+| ------------- | ------------- |
+| Support multiple gaming platforms | [Cloud Endpoint](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & [Cloud API Gateway]()  |
+| Support multiple regions | |
+| Support rapid iteration of game features | BigQuery |
+| Minimize latency | NoSQL: Datastore |
+| Optimize for dynamic scaling | CDN and VMs across regions |
+| Use managed services and pooled resources | Autoscale: Managed instance group  |
+| Minimize costs | Serverless & managed services |
+
+
+### Technical requirements
+
+| Technical requirement  | GCP service |
+| ------------- | ------------- |
+| Dynamically scale based on game activity | ML model |
+| Publish scoring data on a near real–time global leaderboard | Multi-regional bucket & Cloud CDN  |
+| Store game activity logs in structured files for future analysis | [Transcoder API](https://cloud.google.com/transcoder/docs)|
+| Use GPU processing to render graphics server-side for multi-platform support | [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & Notebook: [DataLab](https://www.youtube.com/watch?v=Eu57QKNHaiY) & [Data Studio](https://www.youtube.com/watch?v=cd555DBrehg)|
+| Support eventual migration of legacy games to this new platform | BigQuery |
