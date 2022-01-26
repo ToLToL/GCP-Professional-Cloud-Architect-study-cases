@@ -73,9 +73,7 @@ Software is currently hosted in multiple colocation facilities, the lease on one
 ### Links
 1. [Case study pdf](https://services.google.com/fh/files/blogs/master_case_study_helicopter_racing_league.pdf)
 
-2. [Qwiklabs analysis video](https://partner.cloudskillsboost.google/course_sessions/717302/video/113393)
-
-3. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
+2. [Youtube analysis video](https://www.youtube.com/watch?v=tSTDaMV8ZFc)
 
 
 ### Company overview
@@ -101,6 +99,10 @@ HRL offers paid service to:
 1. Real-time predictions
 2. Process season-long results
 3. Close to users (emerging regions)
+
+### Qwiklabs analysis
+
+![Screenshot 2022-01-26 at 10 34 18](https://user-images.githubusercontent.com/39993930/151138577-9ab4ce0b-1439-4605-9f53-f90d5a1ebf67.png)
 
 ### Existing technical environment
 
