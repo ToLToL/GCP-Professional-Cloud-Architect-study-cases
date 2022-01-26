@@ -134,8 +134,8 @@ HRL offers paid service to:
 
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
-| Maintain or increase prediction throughput and accuracy  | [Apigee](https://www.youtube.com/watch?v=vGe38icp0n4)  |
-| Reduce viewer latency | [Multi-regional bucket & Cloud CDN](https://www.youtube.com/watch?v=FfJNAjoX3Uc&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| Increase transcoding performance | [Transcoder API](https://www.youtube.com/watch?v=cKaryf7qp9w&t=9s) > 10 GB/s otherwise partner interconnect |
-| Create real-time analytics of viewer consumption patterns and engagement | [BigQuery](https://www.youtube.com/watch?v=Y7L2y6NVa9Y&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & [DataLab]() & [Data Studio]()|
-| Create a data mart to enable processing of large volumes of race data | [DataMart](https://www.youtube.com/watch?v=712Y0KpeHok) |
+| Maintain or increase prediction throughput and accuracy  | ML model |
+| Reduce viewer latency | Multi-regional bucket & Cloud CDN  |
+| Increase transcoding performance | [Transcoder API](https://cloud.google.com/transcoder/docs)|
+| Create real-time analytics of viewer consumption patterns and engagement | [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & Notebook: [DataLab](https://www.youtube.com/watch?v=Eu57QKNHaiY) & [Data Studio](https://www.youtube.com/watch?v=cd555DBrehg)|
+| Create a data mart to enable processing of large volumes of race data | BigQuery |
