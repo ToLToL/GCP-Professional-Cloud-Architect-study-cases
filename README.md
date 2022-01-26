@@ -247,6 +247,8 @@ IoT
 - increasing autonomous operation capabilities of their vehicles
 - creating a path to move the remaining legacy systems to the cloud
 
+![Screenshot 2022-01-26 at 16 54 00](https://user-images.githubusercontent.com/39993930/151198030-8cdc1b10-8e8e-4659-8a6d-9c5fe58a2feb.png)
+
 ### Qwiklabs analysis
 ![Screenshot 2022-01-26 at 16 39 50](https://user-images.githubusercontent.com/39993930/151195375-9305ff91-992d-4952-ba3f-7516b2bd6b05.png)
 
