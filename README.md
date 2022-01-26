@@ -182,7 +182,7 @@ They want to create a FPS game that allows:
 
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
-| Lift-and-shifted 5 games on GCP | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
+| Lift-and-shifted 5 games on GCP VMs | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
 | 1 project / game, all nested below a folder that maintains most of the permissions / network policies|  |
 | 1 project for legacy games with low traffic | |
 | Separate sev / testing environments | |
@@ -192,21 +192,21 @@ They want to create a FPS game that allows:
 
 | Business requirement  | GCP service |
 | ------------- | ------------- |
-| Support multiple gaming platforms | [Cloud Endpoint](https://www.youtube.com/watch?v=0fQr7TRhnnU&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & [Cloud API Gateway]()  |
-| Support multiple regions | |
-| Support rapid iteration of game features | BigQuery |
-| Minimize latency | NoSQL: Datastore |
-| Optimize for dynamic scaling | CDN and VMs across regions |
-| Use managed services and pooled resources | Autoscale: Managed instance group  |
-| Minimize costs | Serverless & managed services |
+| Support multiple gaming platforms |   |
+| Support multiple regions | multi-region managed instance group|
+| Support rapid iteration of game features | CI / CD: Cloud Build |
+| Minimize latency | Cloud CDN |
+| Optimize for dynamic scaling | Managed instance group autoscaling |
+| Use managed services and pooled resources | Managed instance group / Cloud run / GKE  |
+| Minimize costs | Cost management: Billing monitoring / alerts  |
 
 
 ### Technical requirements
 
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
-| Dynamically scale based on game activity | ML model |
-| Publish scoring data on a near real–time global leaderboard | Multi-regional bucket & Cloud CDN  |
-| Store game activity logs in structured files for future analysis | [Transcoder API](https://cloud.google.com/transcoder/docs)|
-| Use GPU processing to render graphics server-side for multi-platform support | [BigQuery](https://www.youtube.com/watch?v=So-tVyBQt8E&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd) & Notebook: [DataLab](https://www.youtube.com/watch?v=Eu57QKNHaiY) & [Data Studio](https://www.youtube.com/watch?v=cd555DBrehg)|
-| Support eventual migration of legacy games to this new platform | BigQuery |
+| Dynamically scale based on game activity | GKE nodes / pods autoscaling |
+| Publish scoring data on a near real–time global leaderboard |   |
+| Store game activity logs in structured files for future analysis | Cloud storage |
+| Use GPU processing to render graphics server-side for multi-platform support | GKE with GPU focused nodes |
+| Support eventual migration of legacy games to this new platform |  |
