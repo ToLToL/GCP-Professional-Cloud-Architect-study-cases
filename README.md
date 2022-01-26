@@ -174,8 +174,11 @@ They want to create a FPS game that allows:
 3. Advanced analytics capabilities --> iterate deployment of bug fixes and new functionality (CI / CD)
 
 
+![Screenshot 2022-01-26 at 15 30 36](https://user-images.githubusercontent.com/39993930/151181786-e53f9425-3b39-467b-8aba-788598d0f5b5.png)
+
 ### Qwiklabs analysis
 
+![Screenshot 2022-01-26 at 15 01 22](https://user-images.githubusercontent.com/39993930/151176857-483c1082-82fa-4709-8715-6b85ce0f4346.png)
 
 
 ### Existing technical environment
@@ -183,30 +186,30 @@ They want to create a FPS game that allows:
 | Existing technical environment  | GCP service |
 | ------------- | ------------- |
 | Lift-and-shifted 5 games on GCP VMs | [Cloud storage](https://www.youtube.com/watch?v=F8s-DAfMtRM&list=PLTWE_lmu2InBzuPmOcgAYP7U80a87cpJd)  |
-| 1 project / game, all nested below a folder that maintains most of the permissions / network policies|  |
-| 1 project for legacy games with low traffic | |
-| Separate sev / testing environments | |
+| 1 game / folder that maintains most of the permissions / network policies| Cloud IAM |
+| 1 folder for legacy games with low traffic | |
+| Separate sev / testing / prod projects / folder | |
 
 
 ### Business requirements
 
 | Business requirement  | GCP service |
 | ------------- | ------------- |
-| Support multiple gaming platforms |   |
-| Support multiple regions | multi-region managed instance group|
-| Support rapid iteration of game features | CI / CD: Cloud Build |
-| Minimize latency | Cloud CDN |
-| Optimize for dynamic scaling | Managed instance group autoscaling |
-| Use managed services and pooled resources | Managed instance group / Cloud run / GKE  |
-| Minimize costs | Cost management: Billing monitoring / alerts  |
+| Support multiple gaming platforms | Global HTTP(S) load balancer |
+| Support multiple regions | Global HTTP(S) load balancer + GKE nodes autoscaling (autopilot) + Spanner (multi-region) |
+| Support rapid iteration of game features | CI / CD: Cloud Source Repositories, Cloud Build, Cloud Container Registry, Cloud Deploy (or Jenkins),  |
+| Minimize latency | Global HTTP(S) load balancer |
+| Optimize for dynamic scaling | GKE nodes autoscaling (autopilot) + Spanner (multi-region) |
+| Use managed services and pooled resources | GKE & Spanner |
+| Minimize costs | [Cloud Billing: alerts / visualize](https://cloud.google.com/billing/docs/reports)  |
 
 
 ### Technical requirements
 
 | Technical requirement  | GCP service |
 | ------------- | ------------- |
-| Dynamically scale based on game activity | GKE nodes / pods autoscaling |
-| Publish scoring data on a near real–time global leaderboard |   |
-| Store game activity logs in structured files for future analysis | Cloud storage |
-| Use GPU processing to render graphics server-side for multi-platform support | GKE with GPU focused nodes |
-| Support eventual migration of legacy games to this new platform |  |
+| Dynamically scale based on game activity | GKE autoscaling / Spanner (autoscales by default) |
+| Publish scoring data on a near real–time global leaderboard |  |
+| Store game activity logs in structured files for future analysis | NoSQL: Datastore |
+| Use GPU processing to render graphics server-side for multi-platform support | GKE with GPUs enhanced VMs |
+| Support eventual migration of legacy games to this new platform | legacy games must be containerized for micro-services architecture because we use GKE |
